@@ -6,9 +6,9 @@ describe('app', () => {
     expect(app).toBeTruthy();
   });
 
-  describe('GET /', () => {
+  describe('GET /api', () => {
     it('should respond to the GET method with 200', async () => {
-      const response = await request(app).get('/');
+      const response = await request(app).get('/api');
       expect(response.statusCode).toBe(200);
     });
   });
@@ -16,7 +16,7 @@ describe('app', () => {
   describe('GET /404', () => {
     beforeEach(() => {
       // Avoid polluting the test output with 404 error messages
-      jest.spyOn(console, 'error').mockImplementation(() => {});
+      jest.spyOn(console, 'error').mockImplementation(() => { });
     });
 
     it('should respond to the GET method with a 404 for a route that does not exist', async () => {
