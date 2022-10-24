@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "shoplifting-accd0",
+    "private_key_id": "1a789e2dba550755079e8b0e522978761f016f0b",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0NWTdy6ljsMWf\nHaa0+ml7oe5z/X2ONHJEJ8DbOmBWKEHJtq5Bvuh5WVgY13OqNUCdl5syCGfWmmxm\nGSEPx2TtThFLMw2A81KlrE1P7ONEMow1XWMVOrZ6FNQFbuNuhP3/2hv7b+j8SP7s\nZe8TDeTEvN/I2Yd8GI4dBdo1b4e3OTbe1gaUjxGsRDh5kZQqtnTkpCJFiTVjcQcC\nOlwzGisxWKIOei4+FcovwqHbwAw0BDtDsWNs3EalipJtQWAWFfCElHPRSaKztKTi\n8cXrG98YQxdWVwm+UPHsEuPhM1zE6ryKIhcGgfZVTCqpj14LH3YHwTcD8JjPSYj2\nNiG3Dvv5AgMBAAECggEABHJo25Gedllrz+WzFYuJtbczI4HTTlfRpEEi4Ntg7Bg+\n4ukPd4ulB2bmO0zr/W57pSfoeJ19Ju4406yZhJfUCPoyTtSi5+R8zNbpwCfv/uC3\nHMw60gmf3gVaqu5SW/t9Rt9X+98w+903DFE7oIKiCY951OY2oDyLVFYEFFt8/KSO\nTOMPwAXtuWXlWUR1odHBWOHSdWSApEu0JjvLqjT7bzD0h8Gd4wO2AJy6nwAmUJqn\nOIESogu4f8uYxbv5k1WJsVGr/K7pxrVUuD3oiJxAU/f8syxKgYVwUiUnVEHeKBdr\n2zQaBG1GWoYQ7jIUGWZOk0sPhriP8qVWRk9Dy2Rt3QKBgQDeNNBwEoAbZA3wjZKc\nGRnpTWqck+usd3FzejDjYf7fLrFIXt1lIHyxEeihmtwWlzmNYBGo9wwwCx91ovua\nj0nnzHM16nC2gCNBpe4bWbBg7CAQLKRxHZr7Ynf4F04vvo0FfPgyLV6NVL5+vUM0\nhKGnl2iS34LyKRs+4XtH3tEsJwKBgQDPnXoLuMGzZOx8FLncvrVjlOTQqDGxz9HY\noPfzy3+/pQV+H0afnMqE3XeyhScCa7CWjz2mp4g9ued1/8gNkp24K0/NghBObCsP\ng7ndkBUAqVoY3eAPd6+IdudkFNf4xqg6X5t/fX3L/JmT0hJa5AztebVKY0aELZEd\nKckrR+AK3wKBgQCVH4CbFe9fcoBgZcJ0e+wFxGy99A9/yREcXG6eys9PXHihhvix\nu2GzO7+RZOo7RvXayRRQ/qrxOyW7vst36J3CsFTJZDKMZ+ZBUmg/dquGADFsaWla\neHHgLy8wEgPoysq9Wib/Fa+UzcCiMcX+YtxSKqyFlPa+KZQdWRlxHDnolQKBgBSJ\nnHAaZ7bqTeZ8WmJ2zxS5vuTRLpFLYJPQYJbSU6HOnjt6to7FgNch3VxghZpcssxC\nATRCMF0Czd3DXrPRBB8a0bsfmaNYWe4f9rvvK9Sz7AC3uhltmoSiVoN0+GRYqn2T\nxZsX++C47SxNRJmPI6Q+POvN5EThCRDceFT6uDP7AoGAGjdexIJP2K+GKdDVnpsO\nwdlUG3eBLo3c33CWBPrcFx0ncPuBqTlC1dq3dGvMuKOGZ6eW5b/FPyyR0xvlltkn\nOYbWEoQyq91Cgbr2WewXBsTQ74prU9ub4LKFnaf3usv00c0KhmKjomgLYNJb8XS5\nuquHSEYG9L6819WuQawRW8I=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-7p9mq@shoplifting-accd0.iam.gserviceaccount.com",
+    "client_id": "117656467632751805287",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7p9mq%40shoplifting-accd0.iam.gserviceaccount.com"
+}

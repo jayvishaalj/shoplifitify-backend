@@ -1,0 +1,10 @@
+POST /api/user/details HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 80
+
+{
+  "email" : "jay@jmail.com"
+}
+
+# Authorization: Bearer mt0dgHmLJMVQhvjpNXDyA83vA_PxH23Y
