@@ -18,7 +18,7 @@ module.exports.userOTPVerificationSchema = Joi.object({
 });
 
 module.exports.userLoginSchema = Joi.object({
-    phno: Joi.number().integer().min(1000000000).max(9999999999).required(),
+    email: Joi.string().min(6).required().email(),
     password: Joi.string().required(),
 });
 

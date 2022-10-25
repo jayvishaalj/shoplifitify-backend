@@ -2,9 +2,20 @@ POST /api/user/details HTTP/1.1
 Host: localhost:3000
 Content-Type: application/json
 Content-Length: 80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdXNlciI6eyJkaXNwbGF5X25hbWUiOiJKYXkgVmlzaGFhbCBKIiwiZW1haWxfaWQiOiJqYXlAam1haWwuY29tIiwicGFzc3dvcmQiOiJqYXlAMTIzIiwicGhvdG9fdXJsIjoiYXZhdGFyX2RlZmF1bHQuanBnIiwicm9sZSI6IkNFTyIsInNob3BfbmFtZSI6IkpWSiBDb3JwIFRlc3QgU3RvcmUiLCJzaG9wX3N0YXR1cyI6IlNob3AgQ3JlYXRpb24gSW5pdGlhdGVkIiwic2hvcF9zdGF0dXNlcyI6W3sidGltZXN0YW1wIjoiMTAvMTAvMjAyMiIsInN0YXR1cyI6IlNob3AgQ3JlYXRpb24gSW5pdGlhdGVkIn1dLCJzaG9wX3VybCI6Imh0dHA6Ly90ZXN0c3RvcmVhdXRvMDAxamF5Lm15c2hvcGlmeS5jb20iLCJzaG9waWZ5X3Rva2VuIjoiM2locm8yM2licm4zMmlvYnJvNHJiNCIsInN0b3JlX2Rlc2NyaXB0aW9uIjoiQSB0ZXN0IHN0b3JlIGNyZWF0ZWQgYnkgdXNpbmcgdGhlIGp2aiBjcm9wIHNob3BpZnkgaGVscGVyIGFwcCIsInVzZXJfaWQiOiJqYXlAam1haWwuY29tIn0sImlhdCI6MTY2NjY3ODU1MiwiZXhwIjoxNjY2Njc4NjEyfQ.zOz2sLbBMXHsM5M_FrlaREmnBrW-32BhnlOXxZknS2w
 
 {
   "email" : "jay@jmail.com"
 }
 
-# Authorization: Bearer mt0dgHmLJMVQhvjpNXDyA83vA_PxH23Y
+###
+
+POST /api/user/auth/login HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 80
+
+{
+  "email" : "jay@jmail.com",
+  "password" : "jay@123"
+}
