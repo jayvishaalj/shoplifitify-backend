@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 class User {
-    constructor(display_name, email_id, password, photo_url, role, shop_name, shop_status, shop_statuses, shop_url, shopify_token, store_description, user_id) {
+    constructor(display_name, email_id, password, photo_url, role, shop_name, store_description, user_id, shop_status = "", shop_statuses = [], shopify_token = "", shop_url = "", store_created_at = new Date()) {
         this.display_name = display_name;
         this.email_id = email_id;
         this.password = password;
@@ -12,27 +12,14 @@ class User {
         this.shop_url = shop_url;
         this.shopify_token = shopify_token;
         this.store_description = store_description;
-        this.user_id = user_id;
+        this.user_id = user_id || this.email_id;
+        this.store_created_at = store_created_at;
     }
 
     toString() {
         return `${this.display_name}, ${this.email_id}, ${this.shop_name}`;
     }
 }
-
-// var cityConverter = {
-//     toFirestore: function(city) {
-//         return {
-//             name: city.name,
-//             state: city.state,
-//             country: city.country
-//         };
-//     },
-//     fromFirestore: function(snapshot, options) {
-//         const data = snapshot.data(options);
-//         return new City(data.name, data.state, data.country);
-//     }
-// };
 
 // Firestore data converter
 module.exports.UserConverter = {
@@ -54,6 +41,9 @@ module.exports.UserConverter = {
     },
     fromFirestore: (snapshot, options) => {
         const data = snapshot.data(options);
-        return new User(data.display_name, data.email_id, data.password, data.photo_url, data.role, data.shop_name, data.shop_status, data.shop_statuses, data.shop_url, data.shopify_token, data.store_description, data.user_id);
+        return new User(data.display_name, data.email_id, data.password, data.photo_url, data.role, data.shop_name, data.store_description, data.shop_status, data.shop_statuses, data.shopify_token, data.shop_url, data.store_created_at);
+    },
+    toUserObject: (data) => {
+        return new User(data.display_name, data.email_id, data.password, data.photo_url, data.role, data.shop_name, data.store_description, data.shop_status, data.shop_statuses, data.shopify_token, data.shop_url, data.store_created_at);
     }
 };

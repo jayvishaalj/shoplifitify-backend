@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 .vscode
 combined.log
+user_data

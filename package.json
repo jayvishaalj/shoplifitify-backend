@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "NODE_ENV=production node ./src/bin/www",
-    "dev": "NODE_ENV=development nodemon ./src/bin/www",
+    "dev": "NODE_ENV=development nodemon --ignore './user_data' ./src/bin/www",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "lint": "eslint .",
@@ -20,8 +20,10 @@
     "http-errors": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "puppeteer": "^19.1.1",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0",
+    "uuid": "^9.0.0",
     "winston": "^3.8.2"
   },
   "devDependencies": {

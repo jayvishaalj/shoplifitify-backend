@@ -1,0 +1,39 @@
+POST /api/user/details HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdXNlciI6eyJkaXNwbGF5X25hbWUiOiJKYXkgVmlzaGFhbCBKIiwiZW1haWxfaWQiOiJqYXlAam1haWwuY29tIiwicGFzc3dvcmQiOiJqYXlAMTIzIiwicGhvdG9fdXJsIjoiYXZhdGFyX2RlZmF1bHQuanBnIiwicm9sZSI6IkNFTyIsInNob3BfbmFtZSI6IkpWSiBDb3JwIFRlc3QgU3RvcmUiLCJzaG9wX3N0YXR1cyI6W3sidGltZXN0YW1wIjoiMTAvMTAvMjAyMiIsInN0YXR1cyI6IlNob3AgQ3JlYXRpb24gSW5pdGlhdGVkIn1dLCJzaG9wX3N0YXR1c2VzIjoiM2locm8yM2licm4zMmlvYnJvNHJiNCIsInNob3BfdXJsIjoiMTIvMTAvMjAyMiIsInNob3BpZnlfdG9rZW4iOiJodHRwOi8vdGVzdHN0b3JlYXV0bzAwMWpheS5teXNob3BpZnkuY29tIiwic3RvcmVfZGVzY3JpcHRpb24iOiJBIHRlc3Qgc3RvcmUgY3JlYXRlZCBieSB1c2luZyB0aGUganZqIGNyb3Agc2hvcGlmeSBoZWxwZXIgYXBwIiwidXNlcl9pZCI6IlNob3AgQ3JlYXRpb24gSW5pdGlhdGVkIiwic3RvcmVfY3JlYXRlZF9hdCI6IjIwMjItMTAtMjVUMDc6MjE6MjkuNjIxWiJ9LCJpYXQiOjE2NjY2ODI0ODksImV4cCI6MTY2Njg1NTI4OX0.mcMkxmoieLx0wP1VPJgxSjTCeS334FOPldT6S-buuac
+
+{
+  "email" : "jay@jmail.com"
+}
+
+###
+
+POST /api/user/auth/login HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 80
+
+{
+  "email" : "jay@jmail.com",
+  "password" : "jay@123"
+}
+
+###
+POST /api/user/auth/register HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 80
+
+{
+  "email_id" : "jay1@jmail.com",
+  "password" : "jay@123",
+  "display_name" : "Jay",
+  "password_repeat": "jay@123",
+  "phno" : 7358125151,
+  "dob": "14/04/2000",
+  "gender" : "male",
+  "shop_name" : "JVJ Corp Test Store 2",
+  "store_description" : "JVJ Corp Test Store 2 Desc"
+}

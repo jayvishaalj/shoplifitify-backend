@@ -1,7 +1,7 @@
 const express = require('express');
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
-// const logger = require('morgan');
+const logger = require('morgan');
 const helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
@@ -15,7 +15,7 @@ const errorHandler = require('./api/middleware/errorHandler');
 const app = express();
 
 app.use(helmet()); // https://expressjs.com/en/advanced/best-practice-security.html#use-helmet
-// app.use(logger('dev'));
+app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
